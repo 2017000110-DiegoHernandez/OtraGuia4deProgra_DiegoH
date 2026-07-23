@@ -1,0 +1,30 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+
+        double e;
+
+       
+            Console.WriteLine("Ingrese el lado A del triangulo");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese el lado B del triangulo");
+        double c = Convert.ToDouble(Console.ReadLine());
+        
+
+            Console.WriteLine("Ingrese el lado C del triangulo");
+            e = Convert.ToDouble(Console.ReadLine());
+
+
+        if (e == b & b != c || b == c & c != e || c == e & e != b) { Console.WriteLine("Triangulo isosceles"); }
+
+        if ( e == b & b == c & c == e) { Console.WriteLine("Triangulo equilatero"); }
+
+        if (e != b & b != c & c != e) { Console.WriteLine("Triangulo escaleno"); }
+
+        
+       
+        
+
+    }
+}
