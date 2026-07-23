@@ -1,0 +1,17 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+
+        Console.WriteLine("Ingrese peso en kg");
+        double p = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Ingrese atura en metros");
+        double a = Convert.ToDouble(Console.ReadLine());
+
+        double imc = p / (a * a);
+
+        Console.WriteLine("Su indice de masa corporal es de: " + imc);
+
+
+    }
+}
