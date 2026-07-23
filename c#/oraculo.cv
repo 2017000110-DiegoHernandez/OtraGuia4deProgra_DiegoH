@@ -1,0 +1,154 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        double a, b, c, d;
+
+        Console.WriteLine("Oraculo");
+
+        Console.WriteLine("Ingrese su número de mes de nacimiento");
+        a = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Indique el número de día de su nacimiento");
+        b = Convert.ToDouble(Console.ReadLine());
+
+        switch (a)
+        {
+            case 1:
+                if (b <= 19)
+                {
+                    Console.WriteLine("Capricornio, El esfuerzo silencioso que has realizado pronto será reconocido.");
+                }
+                if (b >= 20)
+                {
+                    Console.WriteLine("Acuario, Una idea que parece imposible podría convertirse en tu próximo gran proyecto.");
+                }
+                break;
+
+            case 2:
+                if (b <= 18)
+                {
+                    Console.WriteLine("Acuario, Una idea que parece imposible podría convertirse en tu próximo gran proyecto.");
+                }
+                if (b >= 19)
+                {
+                    Console.WriteLine("Piscis, Un encuentro inesperado despertará emociones que creías olvidadas.");
+                }
+                break;
+
+            case 3:
+                if (b <= 20)
+                {
+                    Console.WriteLine("Piscis, Un encuentro inesperado despertará emociones que creías olvidadas.");
+                }
+                if (b >= 21)
+                {
+                    Console.WriteLine("Aries, Algo que parecía perdido podría encontrar nuevamente su camino hacia ti.");
+                }
+                break;
+
+            case 4:
+                if (b <= 20)
+                {
+                    Console.WriteLine("Aries, Algo que parecía perdido podría encontrar nuevamente su camino hacia ti.");
+                }
+                if (b >= 21)
+                {
+                    Console.WriteLine("Tauro, La paciencia que has cultivado pronto comenzará a dar frutos.");
+                }
+                break;
+
+            case 5:
+                if (b <= 20)
+                {
+                    Console.WriteLine("Tauro, La paciencia que has cultivado pronto comenzará a dar frutos.");
+                }
+                if (b >= 21)
+                {
+                    Console.WriteLine("Gemini, Una conversación inesperada traerá una nueva perspectiva a tu vida.");
+                }
+                break;
+
+            case 6:
+                if (b <= 20)
+                {
+                    Console.WriteLine("Gemini, Una conversación inesperada traerá una nueva perspectiva a tu vida.");
+                }
+                if (b >= 21)
+                {
+                    Console.WriteLine("Cancer, Escucha tu intuición; hay algo que tu corazón ya sabe.");
+                }
+                break;
+
+            case 7:
+                if (b <= 22)
+                {
+                    Console.WriteLine("Cancer, Escucha tu intuición; hay algo que tu corazón ya sabe.");
+                }
+                if (b >= 23)
+                {
+                    Console.WriteLine("Leo, Tu momento de brillar llegará cuando menos lo estés esperando.");
+                }
+                break;
+
+            case 8:
+                if (b <= 22)
+                {
+                    Console.WriteLine("Leo, Tu momento de brillar llegará cuando menos lo estés esperando.");
+                }
+                if (b >= 23)
+                {
+                    Console.WriteLine("Virgo, Un pequeño cambio será la llave para abrir una gran oportunidad.");
+                }
+                break;
+
+            case 9:
+                if (b <= 22)
+                {
+                    Console.WriteLine("Virgo, Un pequeño cambio será la llave para abrir una gran oportunidad.");
+                }
+                if (b >= 23)
+                {
+                    Console.WriteLine("Libra, Una decisión pendiente se aclarará cuando dejes de buscar la respuesta perfecta.");
+                }
+                break;
+
+            case 10:
+                if (b <= 22)
+                {
+                    Console.WriteLine("Libra, Una decisión pendiente se aclarará cuando dejes de buscar la respuesta perfecta.");
+                }
+                if (b >= 23)
+                {
+                    Console.WriteLine("Escorpio, Algo oculto saldrá a la luz y te permitirá avanzar.");
+                }
+                break;
+
+            case 11:
+                if (b <= 22)
+                {
+                    Console.WriteLine("Escorpio, Algo oculto saldrá a la luz y te permitirá avanzar.");
+                }
+                if (b >= 23)
+                {
+                    Console.WriteLine("Sagitario, Un camino desconocido podría llevarte a una experiencia inolvidable.");
+                }
+                break;
+
+            case 12:
+                if (b <= 22)
+                {
+                    Console.WriteLine("Sagitario, Un camino desconocido podría llevarte a una experiencia inolvidable.");
+                }
+                if (b >= 23)
+                {
+                    Console.WriteLine("Capricornio, El esfuerzo silencioso que has realizado pronto será reconocido.");
+                }
+                break;
+
+            default:
+                Console.WriteLine("Ingrese valores válidos");
+                break;
+        }
+    }
+}
