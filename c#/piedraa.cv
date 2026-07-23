@@ -1,0 +1,66 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int p;
+        int com;
+        string pc = "";
+
+        Console.WriteLine("Ingrese su opción");
+        Console.WriteLine("1. Papel");
+        Console.WriteLine("2. Piedra");
+        Console.WriteLine("3. Tijeras");
+        p = Convert.ToInt32(Console.ReadLine());
+
+   
+        Random random = new Random();
+        com = random.Next(0, 4);
+
+        switch (com)
+        {
+            case 1:
+                pc = "papel";
+                Console.WriteLine("Opción de la computadora: " + pc);
+                if (p == 2)
+                {
+                    Console.WriteLine("Has perdido");
+                }
+                if (p == 3)
+                {
+                    Console.WriteLine("Has ganado");
+                }
+                break;
+
+            case 2:
+                pc = "piedra";
+                Console.WriteLine("Opción de la computadora: " + pc);
+                if (p == 1)
+                {
+                    Console.WriteLine("Has ganado");
+                }
+                if (p == 3)
+                {
+                    Console.WriteLine("Has perdido");
+                }
+                break;
+
+            case 3:
+                pc = "tijeras";
+                Console.WriteLine("Opción de la computadora: " + pc);
+                if (p == 1)
+                {
+                    Console.WriteLine("Has perdido");
+                }
+                if (p == 2)
+                {
+                    Console.WriteLine("Has ganado");
+                }
+                break;
+        }
+
+        if (com == p)
+        {
+            Console.WriteLine("Empate");
+        }
+    }
+}
