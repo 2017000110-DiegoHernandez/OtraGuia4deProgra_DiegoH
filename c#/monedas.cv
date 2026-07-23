@@ -1,0 +1,40 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+
+        double p;
+
+        do
+        {
+            Console.WriteLine("Elija una opcion");
+            Console.WriteLine("1. Conversion de quetzales");
+            Console.WriteLine("2. Salir");
+            p = Convert.ToDouble(Console.ReadLine());
+
+            if (p == 1)
+            {
+                Console.WriteLine("Ingrese cantidad en quetzales");
+                double q = Convert.ToDouble(Console.ReadLine());
+
+                double eu = q / 8.7;
+                double us = q / 7.6;
+                double pes = q * 2.2;
+                double lib = q / 10.2;
+                double ye = q * 20.8;
+
+                Console.WriteLine("Su cantidad de quetzales en eurs es: " + eu);
+                Console.WriteLine("Su cantidad de quetzales en dolares es: " + us);
+                Console.WriteLine("Su cantidad de quetzales en peso mexicanos es: " + pes);
+                Console.WriteLine("Su cantidad de quetzales en libras es: " + lib);
+                Console.WriteLine("Su cantidad de quetzales en yenes es: " + ye);
+            }
+
+            if (p == 2) { Console.WriteLine("Saliendo del sistema..."); }
+
+        } while (p != 2);
+       
+        
+
+    }
+}
