@@ -1,0 +1,35 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int i;
+        int c;
+
+        int[,] num = new int[10, 2];
+        string[] b = new string[10];
+
+        for (i = 0; i < 10; i++)
+        {
+            num[i, 0] = i + 1;
+
+            Console.WriteLine("Ingrese un numero de telefono");
+            num[i, 1] = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ingrese un nombre para el numero");
+            b[i] = Console.ReadLine();
+        }
+
+        Console.WriteLine("Matriz Llena");
+
+        Console.WriteLine("Ingrese el numero que desea buscar");
+        c = Convert.ToInt32(Console.ReadLine());
+
+        for (i = 0; i < 10; i++)
+        {
+            if (num[i, 1] == c)
+            {
+                Console.WriteLine("Su número se encuentra en la posición; " + num[i, 0]);
+            }
+        }
+    }
+}
