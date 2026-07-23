@@ -1,0 +1,34 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+
+        Console.WriteLine("Ingrese el precio del producto: ");
+        double p = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Ingrese la denominacion del billete de pago: ");
+        double b = Convert.ToDouble(Console.ReadLine());
+
+        double s = 0, v = 0, m = 0, i = 0, c = 0;
+
+        if (b < p) { Console.WriteLine("Pago incompleto"); }
+
+        if (b == p) { Console.WriteLine("Pago completo"); }
+
+        double tot = b - p;
+
+        if (tot >= 200) { do { tot = tot - 200; i++; } while (tot > 200); }
+
+        if (tot >= 100) { do { tot = tot - 100; c++; } while (tot > 100); }
+
+        if (tot >= 50) { do { tot = tot - 50; s++; } while (tot > 50); }
+
+        if (tot >= 20) { do { tot = tot - 20; v++; } while (tot > 20); }
+
+        if (tot >= 1) { do { tot = tot - 1; m++; } while (tot !=0); }
+
+        Console.WriteLine("Su vuelto sera, "+ i + "billetes de 200, " + c + "billetes de 100, " + s + "billetes de 50, " + v + "billetes de 20, " + m + "monedas ");
+
+
+
+    }
+}
