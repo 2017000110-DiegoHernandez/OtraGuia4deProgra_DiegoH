@@ -1,0 +1,20 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+
+        Console.WriteLine("Ingrese una temperatura en centigrados");
+        double temp = Convert.ToDouble(Console.ReadLine());
+
+        double k = temp + 273.15;
+        double f = (temp * (9 / 5)) + 32;
+
+        Console.WriteLine("Su temperatura es: "+ temp + " grados celcius");
+        Console.WriteLine("Son "+ f + " grados farenheit");
+        Console.WriteLine("Son " + k + " grados kelvin");
+
+
+
+
+    }
+}
